@@ -46,7 +46,8 @@ async function main(input, res, which) {
                 { name: input }
             );
         }
-        
+
+        console.log("here1");
         
         const results = await grab.toArray();
         var output = "";
@@ -61,6 +62,8 @@ async function main(input, res, which) {
             output = "Sorry, there was no data found";
         }
         await res.send(output);
+
+        console.log("here2");
 
 
         
