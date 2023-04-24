@@ -16,8 +16,7 @@ app.post("/", (req, res) => {
     
     const input = req.body.input;
     const which = req.body.namorsym;
-    // main(input, res, which).catch(console.error);
-    res.send(input);
+    main(input, res, which).catch(console.error);
 
     
     
@@ -63,8 +62,7 @@ async function main(input, res, which) {
             output = "Sorry, there was no data found";
         }
         await res.send(output);
-
-        console.log("here2");
+        
 
 
         
