@@ -43,7 +43,7 @@ async function main(input, res, which) {
         }
         else {
             var grab = await client.db("StockTicker").collection("companies").find(
-                { name: input }
+                { companyName: input }
             );
         }
 
