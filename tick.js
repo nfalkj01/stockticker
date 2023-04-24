@@ -49,21 +49,21 @@ async function main(input, res, which) {
 
         console.log("here1");
         
-        const results = await grab.toArray();
-        var output = "";
-        await results.forEach(company => {
-            output += "<div>Company Name: " + company["companyName"] + "</div><br>";
-            output += "<div>Stock Symbol: " + company["symbol"] + "</div><br>";
-            output += "<div>Price: " + company["price"] + "</div><br><br>";
+        // const results = await grab.toArray();
+        // var output = "";
+        // await results.forEach(company => {
+        //     output += "<div>Company Name: " + company["companyName"] + "</div><br>";
+        //     output += "<div>Stock Symbol: " + company["symbol"] + "</div><br>";
+        //     output += "<div>Price: " + company["price"] + "</div><br><br>";
 
-        });
+        // });
 
-        if (output == ""){
-            output = "Sorry, there was no data found";
-        }
-        await res.send(output);
+        // if (output == ""){
+        //     output = "Sorry, there was no data found";
+        // }
+        // await res.send(output);
 
-        console.log("here2");
+        // console.log("here2");
 
 
         
