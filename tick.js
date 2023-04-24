@@ -61,6 +61,8 @@ async function main(input, res, which) {
         if (output == ""){
             output = "Sorry, there was no data found";
         }
+
+        output += "<form action '/' method='GET'><input type=submit value='Go Back'></form>";
         await res.send(output);
         
 
