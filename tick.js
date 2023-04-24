@@ -1,6 +1,7 @@
 const express = require("express");
 const { MongoClient } = require('mongodb');
 
+const port = process.env.PORT || 3338;
 
 const app  = express();
 
@@ -22,7 +23,7 @@ app.post("/", (req, res) => {
     
 });
 
-var server = app.listen(4000, function () {
+var server = app.listen(port, function () {
     console.log('Node server is running..');
 });
 
